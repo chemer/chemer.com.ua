@@ -1,0 +1,7 @@
+<i>Здравствуйте, <?php echo $user->getUsername(); ?> </i>
+<p>
+    Код подтверждения регистрации: <?php echo $user->getConfirmCode(); ?>
+</p>
+<a href="http://chemer.loc/user/register_confirm/<?php echo $user->getUserId() . '/' . $user->getConfirmCode(); ?>">
+    Ссылка для подтверждения регистрации
+</a>

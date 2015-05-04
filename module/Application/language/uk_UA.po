@@ -1,0 +1,164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: chemer.com.ua\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-30 01:48+0200\n"
+"PO-Revision-Date: 2015-04-30 12:15+0200\n"
+"Last-Translator: vragovR <vragovR@yandex.ru>\n"
+"Language-Team: Chemer Company <chemersky@i.ua>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../view/application/index/index.phtml:5 ../view/layout/layout.phtml:76
+msgid "About Us"
+msgstr "Про нас"
+
+#: ../view/application/index/index.phtml:7
+msgid "AboutUsContent"
+msgstr ""
+"Основний напрямок діяльності нашої компанії - проектування, розробка, "
+"супровід та оптимізація веб-додатків. Якщо сайт вимагає регулярного "
+"оновлення, тоді створена нами система управління контентом (CMS), дозволить "
+"Вам самостійно керувати змістом сайту і оновлювати інформацію без допомоги "
+"програмістів або веб-майстрів. Для розвивающихся проектів обов'язково буде "
+"потрібне створення і додавання нового функціоналу (модулі, плагіни та ін.) у "
+"вже існуючі системи. Також не менш важливе ІТ-консультування для отримання "
+"найбільш ефективного результату. Команда Chemer Company саме створена для "
+"вирішення та втілення в життя подібних задач. Ми стежимо за розвитком веб-"
+"технологій і в своїй роботі використовуємо перспективні сучасні рішення."
+"<br>Скористайтеся формою зворотного зв'язку щоб зв'язатися з нами. "
+"Звертайтесь, будемо раді співпрацювати."
+
+#: ../view/application/index/index.phtml:36
+msgid "royalartmosaic description"
+msgstr "ROYAL ART - сучасна концепція створення прекрасного з мозаїки."
+
+#: ../view/application/index/index.phtml:44
+msgid "imegela description"
+msgstr "Доктор філологічних наук, професор, перекладач - Мегела Іван Петрович."
+
+#: ../view/application/index/index.phtml:13 ../view/layout/layout.phtml:79
+msgid "Portfolio"
+msgstr "Портфоліо"
+
+#: ../view/error/404.phtml:1
+msgid "A 404 error occurred"
+msgstr "Помилка 404"
+
+#: ../view/error/404.phtml:10
+msgid "The requested controller was unable to dispatch the request."
+msgstr "Запитуваний контролер не зміг надіслати запит."
+
+#: ../view/error/404.phtml:13
+msgid ""
+"The requested controller could not be mapped to an existing controller class."
+msgstr ""
+"Не вдалося співвіднести запитуваний контролер з наявним класом контролера."
+
+#: ../view/error/404.phtml:16
+msgid "The requested controller was not dispatchable."
+msgstr "Запитуваний контролер не доступний."
+
+#: ../view/error/404.phtml:19
+msgid "The requested URL could not be matched by routing."
+msgstr "Не вдалося знайти напрямок для запитуваного URL."
+
+#: ../view/error/404.phtml:22
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr ""
+"В даний момент ви не можемо визначити, чому було згенеровано помилку 404."
+
+#: ../view/error/404.phtml:34
+msgid "Controller"
+msgstr "Контролер"
+
+#: ../view/error/404.phtml:41
+#, php-format
+msgid "resolves to %s"
+msgstr "розгортається в %s"
+
+#: ../view/error/404.phtml:53 ../view/error/index.phtml:8
+msgid "Additional information"
+msgstr "Додаткова інформація"
+
+#: ../view/error/404.phtml:56 ../view/error/404.phtml:80
+#: ../view/error/index.phtml:11 ../view/error/index.phtml:35
+msgid "File"
+msgstr "Файл"
+
+#: ../view/error/404.phtml:60 ../view/error/404.phtml:84
+#: ../view/error/index.phtml:15 ../view/error/index.phtml:39
+msgid "Message"
+msgstr "Повідомлення"
+
+#: ../view/error/404.phtml:64 ../view/error/404.phtml:88
+#: ../view/error/index.phtml:19 ../view/error/index.phtml:43
+msgid "Stack trace"
+msgstr "Розгортка стека"
+
+#: ../view/error/404.phtml:74 ../view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr "Попередні винятки"
+
+#: ../view/error/404.phtml:103 ../view/error/index.phtml:58
+msgid "No Exception available"
+msgstr "Немає винятка"
+
+#: ../view/error/index.phtml:1
+msgid "An error occurred"
+msgstr "Трапилася помилка"
+
+#: ../view/layout/layout.phtml:7
+msgid "meta_description"
+msgstr ""
+"Проектування, розробка, супровід та оптимізація веб-додатків. Система "
+"управління контентом (CMS). Створення, додавання нового функціоналу вуже "
+"існуючі системи. ІТ-консультування. Команда Chemer Company створена для "
+"вирішення та втілення в життя подібних задач."
+
+#: ../view/layout/layout.phtml:8
+msgid "meta_keywords"
+msgstr ""
+"Проектування, розробка, супровід та оптимізація веб-додатків. Система "
+"управління контентом (CMS).Створення, додавання нового функціоналу у вже "
+"існуючі системи. ІТ-консультування. Chemer Company."
+
+#: ../view/layout/layout.phtml:9
+msgid "meta_title"
+msgstr ""
+"Chemer Company | Проектування, розробка, супровід та оптимізація веб-"
+"додатків. Система управління контентом (CMS).Створення, додавання нового "
+"функціоналу у вже існуючі системи. ІТ-консультування."
+
+#: ../view/layout/layout.phtml:54 ../view/layout/layout.phtml:55
+msgid "Profile Settings"
+msgstr "Налаштування профіля"
+
+#: ../view/layout/layout.phtml:58 ../view/layout/layout.phtml:59
+msgid "Logout"
+msgstr "Вихід"
+
+#: ../view/layout/layout.phtml:64 ../view/layout/layout.phtml:65
+msgid "Register"
+msgstr "Реєстрація"
+
+#: ../view/layout/layout.phtml:68 ../view/layout/layout.phtml:69
+msgid "Login"
+msgstr "Вхід"
+
+#: ../view/layout/layout.phtml:82
+msgid "Feedback"
+msgstr "Зворотній зв'язок"
+
+#: ../view/layout/layout.phtml:102
+msgid "Close"
+msgstr "Закрити"
+
+#~ msgid "Exception"
+#~ msgstr "Виняток"

@@ -1,0 +1,16 @@
+<div id="registerConfirmBox">
+    <p>
+        На Вашу электронную почту отправлено письмо с кодом подтверждения регистрации.
+    </p>
+    <div class="form-group">
+        <label class="control-label">Код подтверждения:</label>
+        <input type="text" name="code" class="form-control" value="">
+        <div class="form-errors"></div>
+    </div>
+    <div class="pull-right">
+        <button type="button" name="confirm" class="btn btn-default"
+                value="<?php echo $this->url('user/register_confirm', array('id' => $id)); ?>">Подтвердить
+        </button>
+    </div>
+    <div class="clearfix"></div>
+</div>

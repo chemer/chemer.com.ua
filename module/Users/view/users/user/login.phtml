@@ -1,0 +1,36 @@
+<?php
+$form = $this->loginForm;
+$form->prepare();
+?>
+<div id="login">
+    <form id="loginForm" name="loginForm" class="center-block" 
+          action="<?php echo $this->url('user/login'); ?>" 
+          method="post" enctype="application/x-www-form-urlencoded" onsubmit="return false;">
+        <div class="form-group">
+            <?php 
+            echo $this->formLabel($form->get('email')); 
+            echo $this->formInput($form->get('email')); 
+            ?>
+        </div>
+        <div class="form-group">
+            <?php 
+            echo $this->formLabel($form->get('password'));
+            echo $this->formInput($form->get('password')); 
+            ?>
+        </div>
+        <div class="text-center">
+            <div class="form-errors"><?php echo $this->generalError; ?></div>
+            <?php 
+            echo $this->formButton($form->get('submit'));
+            ?>
+            &nbsp;&nbsp;
+            <a href="#"
+               onclick="alert('This action temporarily unavailable.');return false;">
+                Забыли пароль
+            </a>
+            &nbsp;&nbsp;
+            <a href="<?php echo $this->url('user/register'); ?>"
+               class="register" alt="Регистрация" onclick="return false;">Регистрация</a>
+        </div>
+    </form>
+</div>

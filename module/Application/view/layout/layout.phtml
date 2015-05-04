@@ -1,0 +1,114 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <meta name="description" content="<?php echo $this->translate('meta_description'); ?>"/>
+        <meta name="keywords" content="<?php echo $this->translate('meta_keywords'); ?>"/>
+        <title><?php echo $this->translate('meta_title'); ?></title>
+        <link rel="icon" href="<?php echo $this->basePath('favicon.ico'); ?>" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('css/jquery-ui.css'); ?>"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('css/bootstrap.css'); ?>"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('css/bootstrap-theme.css'); ?>"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('css/style.css'); ?>"/>
+        <script>
+            var basePath = "<?php echo $this->basePath(''); ?>";
+            var hasLogged = <?php echo (int)$this->hasLogged; ?>;
+        </script>
+        <script type="text/javascript" src="<?php echo $this->basePath('js/jquery.min.js'); ?>"></script>
+        <script type="text/javascript" src="<?php echo $this->basePath('js/jquery-ui.js'); ?>"></script>
+        <script type="text/javascript" src="<?php echo $this->basePath('js/bootstrap.js'); ?>"></script>
+        <script type="text/javascript" src="<?php echo $this->basePath('js/functions.js'); ?>"></script>
+        <script type="text/javascript" src="<?php echo $this->basePath('js/common.js'); ?>"></script>
+        <script type="text/javascript" src="<?php echo $this->basePath('js/eventManager.js'); ?>"></script>
+        <script type="text/javascript" src="<?php echo $this->basePath('js/feedback.js'); ?>"></script>
+        <script type="text/javascript" src="<?php echo $this->basePath('js/authorization.js'); ?>"></script>
+    </head>
+    <body>
+        <div id="container" class="container">
+            <div id="header">
+                <div id="logo">
+                    <object type="application/x-shockwave-flash" data="<?php echo $this->basePath('img/logo.swf'); ?>" 
+                            width="300px" height="150px">
+                        <param name="movie" value="<?php echo $this->basePath('img/logo.swf'); ?>">
+                        <param name="wmode" value="transparent">
+                        <param name="play" value="true">
+                        <param name="quality" value="best">
+                        <param name="loop" value="false">
+                        <param name="menu" value="false">
+                        <img src="<?php echo $this->basePath('img/logo.png'); ?>"/>
+                    </object>
+                    <a href="<?php echo $this->basePath(''); ?>"></a>
+                </div>   
+                <div id="langWrap">
+                    <img lang="uk_UA" src="<?php echo $this->basePath('img/flag_ua.gif'); ?>"
+                         class="<?php echo APP_LANGUAGE === 'uk_UA' ? 'active' : ''; ?>"/>
+                    <img lang="ru_RU" src="<?php echo $this->basePath('img/flag_ru.jpg'); ?>"
+                         class="<?php echo APP_LANGUAGE === 'ru_RU' ? 'active' : ''; ?>"/>
+                    <img lang="en_US" src="<?php echo $this->basePath('img/flag_en.jpg'); ?>"
+                         class="<?php echo APP_LANGUAGE === 'en_US' ? 'active' : ''; ?>"/>
+                </div>
+                <div id="authorizationLinks">
+                    <div class="logged-yes <?php echo $this->hasLogged ? '' : 'hide'; ?>">
+                            <a class="account" title="<?php echo $this->translate('Profile Settings'); ?>" 
+                               alt="<?php echo $this->translate('Profile Settings'); ?>" href="<?php echo $this->url('user/setting'); ?>"
+                               onclick="alert('This action temporarily unavailable.');return false;">
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </a>
+                        <a class="logout" title="<?php echo $this->translate('Logout'); ?>" 
+                           alt="<?php echo $this->translate('Logout'); ?>" href="<?php echo $this->url('user/logout'); ?>">
+                            <span class="glyphicon glyphicon-log-out"></span>
+                        </a>
+                    </div>
+                    <div class="logged-no <?php echo $this->hasLogged ? 'hide' : ''; ?>">
+                        <a class="register" title="<?php echo $this->translate('Register'); ?>"
+                           alt="<?php echo $this->translate('Register'); ?>" href="<?php echo $this->url('user/register'); ?>" onclick="return false;">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </a>
+                        <a class="login" title="<?php echo $this->translate('Login'); ?>" 
+                           alt="<?php echo $this->translate('Login'); ?>" href="<?php echo $this->url('user/login'); ?>" onclick="return false;">
+                            <span class="glyphicon glyphicon-log-in"></span>
+                        </a>
+                    </div>
+                </div>
+                <div id="menu">
+                    <div class="menu-item">
+                        <a href="#aboutUs" class="anchor"><?php echo $this->translate('About Us'); ?></a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#portfolio" class="anchor"><?php echo $this->translate('Portfolio'); ?></a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#feedback" class="anchor"><?php echo $this->translate('Feedback'); ?></a>
+                    </div>
+                    <!--<div class="menu-item">
+                        <a href="<?php //echo $this->basePath('development'); ?>">Плагины и т.п.</a>
+                    </div>-->        
+                </div>
+            </div> 
+            <div id="contentWrap">
+                <h3 class="panel-title">
+                <?php echo $this->content; ?>
+                <div id="footer" class="text-center">
+                    &copy; 2012-<?php echo date('Y'); ?> Powered by Chemer Company
+                </div>
+            </div>
+            <!-- Modal -->
+            <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span aria-hidden="true">&times;</span><span class="sr-only"><?php echo $this->translate('Close'); ?></span>
+                            </button>
+                            <h4 class="modal-title text-center"></h4>
+                        </div>
+                        <div class="modal-body"></div>
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

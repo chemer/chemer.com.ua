@@ -1,0 +1,47 @@
+<?php
+$form = $this->registerForm;
+$form->prepare();
+?>
+<div id="register">
+    <form id="registerForm" name="registerForm" class="center-block" 
+          action="<?php echo $this->url('user/register'); ?>" 
+          method="post" enctype="application/x-www-form-urlencoded" onsubmit="return false;">
+        <div class="form-group">
+            <?php 
+            echo $this->formLabel($form->get('username')); 
+            echo $this->formInput($form->get('username')); 
+            ?>
+            <div class="form-errors"><?php echo $this->formElementErrors($form->get('username')); ?></div>
+        </div>
+        <div class="form-group">
+            <?php 
+            echo $this->formLabel($form->get('email'));
+            echo $this->formInput($form->get('email')); 
+            ?>
+            <div class="form-errors"><?php echo $this->formElementErrors($form->get('email')); ?></div>
+        </div>
+        <div class="form-group">
+            <?php 
+            echo $this->formLabel($form->get('password'));
+            echo $this->formInput($form->get('password')); 
+            ?>
+            <div class="form-errors"><?php echo $this->formElementErrors($form->get('password')); ?></div>
+        </div>
+        <div class="form-group">
+            <?php 
+            echo $this->formLabel($form->get('confirm_password'));
+            echo $this->formInput($form->get('confirm_password')); 
+            ?>
+            <div class="form-errors"><?php echo $this->formElementErrors($form->get('confirm_password')); ?></div>
+        </div>
+        <div class="text-center">
+            <div class="form-errors"><?php echo $this->generalError; ?></div>
+            <?php 
+            echo $this->formButton($form->get('submit'));
+            ?>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="<?php echo $this->url('user/login'); ?>"
+               class="login" alt="Вход" onclick="return false;">Вход</a>
+        </div>
+    </form>
+</div>

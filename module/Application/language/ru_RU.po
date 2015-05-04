@@ -1,0 +1,153 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: chemer.com.ua\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-30 02:07+0200\n"
+"PO-Revision-Date: 2015-04-30 11:45+0200\n"
+"Last-Translator: vragovR <vragovR@yandex.ru>\n"
+"Language-Team: Chemer Company <chemersky@i.ua>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../view/application/index/index.phtml:5 ../view/layout/layout.phtml:76
+msgid "About Us"
+msgstr "О нас"
+
+#: ../view/application/index/index.phtml:7
+msgid "AboutUsContent"
+msgstr ""
+"Основное направление деятельности нашей компании - проектирование, разработка, сопровождение и оптимизация веб-приложений. Если сайт "
+"требует регулярного обновления, тогда созданная нами система управления контентом (CMS), позволит Вам самостоятельно управлять "
+"содержимым сайта и обновлять информацию без помощи программистов или веб-мастеров. Для развивающихся проектов обязательно потребуется "
+"создание и добавление нового функционала (модули, плагины и пр.) в уже существующие системы. Так же не мало важно ИТ-консультирование "
+"для получения наиболее эффективного результата. Команда \"Chemer Company\" как раз и создана для решения и воплощения в жизнь подобных "
+"задач. Мы следим за развитием веб-технологий и в своей работе используем перспективные современные решения. <br>Воспользуйтесь формой "
+"обратной связи чтобы связаться с нами. Обращайтесь, будем рады сотрудничать."
+
+#: ../view/application/index/index.phtml:13 ../view/layout/layout.phtml:79
+msgid "Portfolio"
+msgstr "Портфолио"
+
+#: ../view/application/index/index.phtml:28
+msgid "denin description"
+msgstr ""
+"\"DENIN\" - команда дипломированных специалистов, создающих дизайн интерьера (гостиные, кухни, спальни, санузлы, детские, холлы и "
+"другое)."
+
+#: ../view/application/index/index.phtml:36
+msgid "royalartmosaic description"
+msgstr "ROYAL ART - современная концепция создания прекрасного из мозаики."
+
+#: ../view/application/index/index.phtml:44
+msgid "imegela description"
+msgstr "Доктор филологических наук, профессор, переводчик - Мегела Иван Петрович."
+
+#: ../view/error/404.phtml:1
+msgid "A 404 error occurred"
+msgstr "Ошибка 404"
+
+#: ../view/error/404.phtml:10
+msgid "The requested controller was unable to dispatch the request."
+msgstr "Запрашиваемый контроллер не смог отправить запрос."
+
+#: ../view/error/404.phtml:13
+msgid "The requested controller could not be mapped to an existing controller class."
+msgstr "Запрашиваемый контроллер не может быть сопоставлен с существующими классом контроллера."
+
+#: ../view/error/404.phtml:16
+msgid "The requested controller was not dispatchable."
+msgstr "Запрашиваемый контроллер не доступен."
+
+#: ../view/error/404.phtml:19
+msgid "The requested URL could not be matched by routing."
+msgstr "Для запрашиваемого URL не может быть достигнуто направление."
+
+#: ../view/error/404.phtml:22
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr "Мы не можем определить причину создания страницы 404."
+
+#: ../view/error/404.phtml:34
+msgid "Controller"
+msgstr "Контроллер"
+
+#: ../view/error/404.phtml:41
+#, php-format
+msgid "resolves to %s"
+msgstr "разрешает для %s"
+
+#: ../view/error/404.phtml:53 ../view/error/index.phtml:8
+msgid "Additional information"
+msgstr "Дополнительная информация"
+
+#: ../view/error/404.phtml:56 ../view/error/404.phtml:80 ../view/error/index.phtml:11 ../view/error/index.phtml:35
+msgid "File"
+msgstr "Файл"
+
+#: ../view/error/404.phtml:60 ../view/error/404.phtml:84 ../view/error/index.phtml:15 ../view/error/index.phtml:39
+msgid "Message"
+msgstr "Сообщение"
+
+#: ../view/error/404.phtml:64 ../view/error/404.phtml:88 ../view/error/index.phtml:19 ../view/error/index.phtml:43
+msgid "Stack trace"
+msgstr "Развертывание стека"
+
+#: ../view/error/404.phtml:74 ../view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr "Предыдущие исключения"
+
+#: ../view/error/404.phtml:103 ../view/error/index.phtml:58
+msgid "No Exception available"
+msgstr "Нет имеющихся исключений"
+
+#: ../view/error/index.phtml:1
+msgid "An error occurred"
+msgstr "Произошла ошибка"
+
+#: ../view/layout/layout.phtml:7
+msgid "meta_description"
+msgstr ""
+"Проектирование, разработка, сопровождение и оптимизация веб-приложений. Система управления контентом (CMS). Создание, добавление нового "
+"функционала в уже существующие системы. ИТ-консультирование. Команда Chemer Company создана для решения и воплощения в жизнь подобных "
+"задач."
+
+#: ../view/layout/layout.phtml:8
+msgid "meta_keywords"
+msgstr ""
+"Проектирование, разработка, сопровождение и оптимизация веб-приложений. Система управления контентом (CMS). Создание, добавление нового "
+"функционала в уже существующие системы. ИТ-консультирование. Chemer Company."
+
+#: ../view/layout/layout.phtml:9
+msgid "meta_title"
+msgstr ""
+"Chemer Company | Проектирование, разработка, сопровождение и оптимизация веб-приложений. Система управления контентом (CMS). Создание, "
+"добавление нового функционала в уже существующие системы. ИТ-консультирование."
+
+#: ../view/layout/layout.phtml:54 ../view/layout/layout.phtml:55
+msgid "Profile Settings"
+msgstr "Настройки профиля"
+
+#: ../view/layout/layout.phtml:58 ../view/layout/layout.phtml:59
+msgid "Logout"
+msgstr "Выход"
+
+#: ../view/layout/layout.phtml:64 ../view/layout/layout.phtml:65
+msgid "Register"
+msgstr "Регистрация"
+
+#: ../view/layout/layout.phtml:68 ../view/layout/layout.phtml:69
+msgid "Login"
+msgstr "Вход"
+
+#: ../view/layout/layout.phtml:82
+msgid "Feedback"
+msgstr "Обратная связь"
+
+#: ../view/layout/layout.phtml:102
+msgid "Close"
+msgstr "Закрыть"

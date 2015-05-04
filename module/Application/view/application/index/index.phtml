@@ -1,0 +1,62 @@
+<div id="content">
+    
+    <div id="aboutUs">
+        <div class="clearfix"></div>
+        <h3 class="text-center"><?php echo $this->translate('About Us'); ?></h3>
+        <p>
+            <?php echo $this->translate('AboutUsContent'); ?>
+        </p>
+    </div>
+    
+    <div id="portfolio">
+        <div class="clearfix"></div>
+        <h3 class="text-center"><?php echo $this->translate('Portfolio'); ?></h3>
+        <div id="portfolioCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#portfolioCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#portfolioCarousel" data-slide-to="1"></li>
+                <li data-target="#portfolioCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Обгортка для слайдів -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <a href="http://denin.com.ua" target="blank">
+                        <img src="<?php echo $this->basePath('img/portfolio/denin.jpg'); ?>"/>
+                    </a>
+                    <div class="carousel-caption">
+                        <?php echo $this->translate('denin description'); ?>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="http://royalartmosaic.com" target="blank">
+                        <img src="<?php echo $this->basePath('img/portfolio/royalartmosaic.jpg'); ?>"/>
+                    </a>
+                    <div class="carousel-caption">
+                        <?php echo $this->translate('royalartmosaic description'); ?>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="http://imegela.com.ua" target="blank">
+                        <img src="<?php echo $this->basePath('img/portfolio/imegela.jpg'); ?>"/>
+                    </a>
+                    <div class="carousel-caption">
+                        <?php echo $this->translate('imegela description'); ?>
+                    </div>
+                </div>
+            </div>
+            <!-- Управління -->
+            <a class="left carousel-control" href="#portfolioCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Prev</span>
+            </a>
+            <a class="right carousel-control" href="#portfolioCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<?php echo $this->feedback; ?>

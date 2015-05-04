@@ -1,0 +1,49 @@
+<?php
+$form = $this->feedbackForm;
+$form->prepare();
+?>
+<div id="feedback">
+    <div class="clearfix"></div>
+    <h3 class="text-center"><?php echo $this->translate('Feedback'); ?></h3>
+    <form id="feedbackForm" name="feedbackForm" action="<?php echo $this->url('feedback'); ?>" 
+          method="post" enctype="multipart/form-data" target="feedbackIframe">
+        <div class="form-group" data-toggle="tooltip" title="<?php echo $this->translate('Subject (required)'); ?>">
+            <?php 
+            echo $this->formLabel($form->get('subject')); 
+            echo $this->formInput($form->get('subject')); 
+            ?>
+            <div class="form-errors" ref="subject"></div>
+        </div>
+        <div class="form-group" data-toggle="tooltip" title="<?php echo $this->translate('Message (required)'); ?>">
+            <?php 
+            echo $this->formLabel($form->get('text')); 
+            echo $this->formTextarea($form->get('text')); 
+            ?>
+            <div class="form-errors" ref="text"></div>
+        </div>
+        <div>
+            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 padding-left-0">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-paperclip"></span>
+                    </div>
+                    <?php echo $this->formFile($form->get('file')); ?>
+                    <div class="input-group-addon">
+                        <div class="detach-file" data-toggle="tooltip" title="<?php echo $this->translate('Detach file'); ?>">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-errors" ref="file"></div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 padding-right-0">
+                <button id="sendLetter" type="submit" class="pull-right btn btn-default">
+                    <?php echo $this->translate('Send'); ?>
+                    <span class="glyphicon glyphicon-send"></span>
+                </button>
+            </div>
+        </div>
+    </form>
+    <div class="clearfix"></div>
+    <iframe id="feedbackIframe" name="feedbackIframe" class="hidden"></iframe>
+</div>
