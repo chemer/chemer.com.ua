@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: chemer.com.ua\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-30 02:07+0200\n"
-"PO-Revision-Date: 2015-04-30 11:45+0200\n"
+"PO-Revision-Date: 2015-05-10 02:41+0200\n"
 "Last-Translator: vragovR <vragovR@yandex.ru>\n"
 "Language-Team: Chemer Company <chemersky@i.ua>\n"
 "Language: en_US\n"
@@ -47,6 +47,10 @@ msgstr "ROYAL ART - современная концепция создания �
 #: ../view/application/index/index.phtml:44
 msgid "imegela description"
 msgstr "Доктор филологических наук, профессор, переводчик - Мегела Иван Петрович."
+
+#: ../view/application/index/index.phtml:53
+msgid "milabartashuk description"
+msgstr "\"Milabartashuk\" - belly dance."
 
 #: ../view/error/404.phtml:1
 msgid "A 404 error occurred"
